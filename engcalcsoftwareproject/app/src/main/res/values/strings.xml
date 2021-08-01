@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Engineering calculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logab_text">log<sub><small>a</small></sub>b</string>
+    <string name="inverse_text">a<sup><small>-1</small></sup></string>
+    <string name="square_text">a<sup>2</sup></string>
+    <string name="cube_text">a<sup>3</sup></string>
+    <string name="power_text">a<sup>b</sup></string>
+    <string name="sqrt_text">sqrt(a)</string>
+    <string-array name="calculator_list">
+        <item>Scientific Calculator</item>
+        <item>DSP Calculator</item>
+        <item>Numerical Analysis</item>
+        <item>Operations Reasearch</item>
+        <item>Matrices and Vectors</item>
+    </string-array>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="unentered_inputs">Please enter all inputs</string>
+</resources>

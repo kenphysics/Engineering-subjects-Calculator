@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="horizontal"
+    android:overScrollMode="ifContentScrolls">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="0dp"
+            android:text="Enter Length of sequence 1:" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="0dp"
+            android:text=""
+            android:inputType="number"
+            android:id="@+id/length_1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="0dp"
+            android:text="Enter Length of sequence 2:" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="0dp"
+            android:text=""
+            android:inputType="number"
+            android:id="@+id/length_2"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="enter"
+        android:id="@+id/conv_enter_button"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/input_display_conv"
+        android:visibility="gone">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Sequence 1\nReal parts:"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:visibility="visible"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:minHeight="40dp"
+            android:padding="2dp"
+            android:visibility="visible"
+            android:minWidth="30dp"
+            android:id="@+id/real_1"/>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imagenary parts"
+        android:layout_margin="3dp"
+        android:visibility="visible"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="30dp"
+            android:layout_margin="2dp"
+            android:minHeight="40dp"
+            android:padding="2dp"
+            android:visibility="visible"
+            android:id="@+id/img_1"/>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Sequence 2\nReal parts:"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:visibility="visible"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:minHeight="40dp"
+            android:padding="2dp"
+            android:visibility="visible"
+            android:id="@+id/real_2"
+            android:minWidth="30dp"/>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imagenary parts"
+        android:layout_margin="3dp"
+        android:visibility="visible"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:minHeight="40dp"
+            android:padding="2dp"
+            android:visibility="visible"
+            android:id="@+id/img_2"
+            android:minWidth="30dp"/>
+    </HorizontalScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Ok"
+        android:id="@+id/ok_conv"
+        android:visibility="visible"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/result_display_conv">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="2dp"
+        android:text="The result"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_margin="2dp"
+        android:id="@+id/conv_result"
+        android:visibility="visible"
+        android:gravity="center_horizontal"/>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
